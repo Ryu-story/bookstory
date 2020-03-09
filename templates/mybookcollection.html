@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>당신의 서재</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ -->
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <style>
+      .feed-title-div {
+        position: absolute;
+        width: 400px;
+        height: 64px;
+        left: 38%;
+        top: 10%;
+
+        background: #9b9b9b;
+        mix-blend-mode: normal;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 64px;
+        align-items: center;
+        text-align: center;
+
+        color: #ffffff;
+      }
+      .profile-pos {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 20%;
+        top: 10%;
+      }
+      .name-pos {
+        position: absolute;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        align-items: center;
+        text-align: center;
+
+        color: #5b5b5b;
+      }
+      .bookmark {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        left: 65%;
+        top: 10%;
+      }
+      .flag {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        left: 72%;
+        top: 10%;
+      }
+      .search {
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        left: 79%;
+        top: 10%;
+      }
+      .large-bar {
+        position: absolute;
+        width: 1000px;
+        height: 60px;
+        top: 22%;
+        left: 22%;
+
+        background: #444444;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 64px;
+        align-items: center;
+        text-align: center;
+
+        color: #ffffff;
+      }
+      .bookself-posi {
+        position: absolute;
+        width: 1200px;
+        top: 30%;
+        left: 18%;
+      }
+      .shelf {
+        position: relative;
+        width: 100%;
+        height: 30px;
+
+        background: #444444;
+      }
+      .book-detail {
+        text-align: center;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <div class="profile-pos">
+      <img src="../static/profile.png" height="64px" width="64px" />
+      <br />
+      <a>클라우드</a>
+    </div>
+    <div class="feed-title-div">당신의 서재</div>
+    <img src="../static/inactive-book.png" class="bookmark" />
+    <img src="../static/ic_outline-outlined-flag.png" class="flag" />
+    <img src="../static/ic_sharp-search.png" class="search" />
+    <div class="large-bar"><a id="user-id">클라우드</a> 님의 도서 리스트</div>
+    <div class="bookself-posi">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+        </div>
+        <div class="shelf"></div>
+        <div class="row">
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+        </div>
+        <div class="shelf"></div>
+        <div class="row">
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+          <div class="col">
+            <img src="../static/vintage book covers 1.png" />
+          </div>
+        </div>
+        <div class="shelf"></div>
+        <div class="row">
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+          <div class="col book-detail">
+            <p>책 제목</p>
+
+            <p>작가</p>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </body>
+</html>

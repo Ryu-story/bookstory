@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>당신의 서재</title>
+
+    <!-- Theme CSS - Includes Bootstrap -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+    <link href="../static/stylesheets/style.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        $("#datepicker").datepicker({
+          showButtonPanel: true,
+          currentText: "오늘 날짜",
+          closeText: "닫기",
+          dateFormat: "yy-mm-dd",
+          maxDate: "D",
+          changeMonth: true,
+          changeYear: true
+        });
+      });
+    </script>
+
+    <!-- 구글폰트 -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /> -->
+    <style>
+    </style>
+    
+  </head>
+  <body>
+    <div class="mainHeaderGroup">
+      <div class="large-grey-box">
+        <p class="largeWhiteText">회원가입</p>
+      </div>
+    </div>
+    <div class="register-group">
+      <div class="register-bar">
+        <input
+          type="email"
+          class="register-input"
+          name="email"
+          placeholder="이메일 주소"
+          aria-label="email"
+        />
+        <button class="double-check-btn">중복확인</button>
+      </div>
+      <div class="register-bar">
+        <input
+          type="password"
+          class="register-input"
+          name="password"
+          placeholder="비밀번호"
+          aria-label="password"
+        />
+      </div>
+      <div class="register-bar">
+        <input
+          type="password"
+          class="register-input"
+          name="password"
+          placeholder="비밀번호 확인"
+          aria-label="password"
+        />
+      </div>
+      <div class="register-bar">
+        <input
+          type="text"
+          class="register-input"
+          name="nickname"
+          placeholder="닉네임(별명)"
+          aria-label="nickname"
+        />
+        <button class="double-check-btn">중복확인</button>
+      </div>
+      <div class="register-flex-bar">
+        <div class="register-item">
+          <input type="text" id="datepicker" class="register-birth" placeholder="생년월일(8자리 입력)" />
+        </div>
+        <div class="register-item">
+          <div class="register-male">
+            <input type="radio" name="gender" id="male" checked />
+            <label for="male">남성</label>
+          </div>
+        </div>
+          <div class="register-item">
+            <input type="radio" name="gender" id="female" />
+            <label for="female">여성</label>
+          </div>
+        </div>
+      </div>
+      <div class="register-btn">
+        <button class="lagre-black-btn">회원가입</button>
+      </div>
+    </div>
+
+    <!-- <input
+      type="email"
+      class="email-div"
+      name="email"
+      id="email"
+      placeholder="이메일 주소"
+      aria-label="email"
+    />
+    <button class="check-black-btn">중복확인</button>
+    <hr class="line-one" />
+
+    <input
+      type="password"
+      class="pwd-div"
+      name="password"
+      id="password"
+      placeholder="비밀번호"
+      aria-label="pwd"
+    />
+    <hr class="line-two" />
+
+    <input
+      type="password"
+      class="pwd-con-div"
+      name="password"
+      id="password-confirm"
+      placeholder="비밀번호 확인"
+      aria-label="pwd"
+    />
+    <hr class="line-three" />
+
+    <input
+      type="text"
+      class="nickname-div"
+      name="nickname"
+      id="nickname"
+      placeholder="닉네임"
+      aria-label="nickname"
+    />
+    <button class="check-black-btn-1">중복확인</button>
+    <hr class="line-four" />
+
+    <input type="text1" id="datepicker" placeholder="생년월일" class="birthday-div" />
+    <fieldset class="gender-checkbox">
+      남성 <input type="radio" name="gender" value="man" checked /> 여성
+      <input type="radio" name="gender" value="woman" />
+    </fieldset>
+
+    <button class="submit-btn">회원가입</button> -->
+  </body>
+</html>

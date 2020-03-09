@@ -1,0 +1,695 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 메인헤더 (당신의 서재) 스타일 */
+.mainHeaderGroup {
+  width: 1274px;
+  height: 93px;
+  margin: 120px auto 0;
+  border: 0px dotted red;
+  position: relative;
+}
+
+.large-grey-box {
+  position: absolute;
+  top: 0;
+  left: 436px;
+
+  width: 400px;
+  height: 64px;
+  border-radius: 50px;
+  background-color: #9b9b9b;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.large-black-box {
+  position: absolute;
+  top: 0;
+  left: 436px;
+
+  width: 400px;
+  height: 64px;
+  border-radius: 50px;
+  background-color: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.largeWhiteText {
+  font-size: 24px;
+  text-align: center;
+  line-height: 64px;
+  color: #ffffff;
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+
+/* 메인 인트로 글 */
+.intro {
+  /* 감명깊은 책의 구절을 저장하고, 자신만의 서재를 만들어 가세요. 
+  다른 사람들의 서재를 구경하고 자신에게 맞는 책을 추천 받을 수 있습니다. */
+  width: 800px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2rem;
+  text-align: center;
+  color: #3f3f3f;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* 메인 로그인 체크 박스 */
+.input-box-group {
+  position: relative;
+  width: 300px;
+  height: 259px;
+  margin: 150px auto;
+  border: 1px dotted red;
+}
+
+.white-input-box {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+
+  font-size: 16px;
+}
+
+.black-btn {
+  width: 300px;
+  height: 40px;
+  background-color: #000000;
+
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.register-btn {
+  margin: 0 auto;
+  width: 600px;
+  height: 60px;
+}
+
+.lagre-black-btn {
+  width: 600px;
+  height: 60px;
+  background-color: #000000;
+
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.input-box-group .register-btn {
+  position: absolute;
+  bottom: 0;
+  background-color: #6b6b6b;
+}
+/* 내 프로필 사진 */
+.profileGroup {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 93px;
+}
+
+.profile-photo {
+  display: block;
+  width: 64px;
+  margin: 0 auto;
+}
+
+.profileGroup p {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* 상대 프로필 사진 */
+.opponent-profileGroup {
+  position: absolute;
+  top: 0;
+  left: 253px;
+
+  width: 100px;
+  height: 93px;
+}
+
+.opponent-profileGroup p {
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* 팔로잉 체크 버튼 */
+.follow-btn {
+  position: absolute;
+  top: 0;
+  left: 135px;
+
+  width: 100px;
+  height: 93px;
+}
+
+.follow-check {
+  display: block;
+  width: 36px;
+  margin: 14px auto;
+}
+
+.follow-btn p {
+  width: 100px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* 내 서재 버튼 */
+.library-btn {
+  position: absolute;
+  top: 0;
+  left: 943px;
+
+  width: 64px;
+  height: 64px;
+}
+
+.library-photo {
+  display: block;
+  width: 64px;
+}
+
+/* 베스트 조회 버튼 */
+.best-btn {
+  position: absolute;
+  top: 0;
+  left: 1045px;
+
+  width: 64px;
+  height: 64px;
+}
+
+.best-photo {
+  display: block;
+  width: 64px;
+}
+
+/* 검색 버튼 */
+.search-btn {
+  position: absolute;
+  top: 0;
+  left: 1147px;
+
+  width: 64px;
+  height: 64px;
+}
+
+.search-photo {
+  display: block;
+  width: 64px;
+}
+
+/* 타이틀 바(도서리스트 목록) */
+.title-bar {
+  width: 1000px;
+  height: 60px;
+  background-color: #444444;
+  margin: 67px auto 0;
+}
+
+.title-bar p {
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  color: #ffffff;
+  margin-block-start: auto;
+  margin-block-end: auto;
+}
+
+.title-line {
+  width: 1000px;
+  height: 60px;
+  border-bottom: 1px solid #000000;
+  margin: 67px auto 0;
+}
+
+/* 타이틀 라인(후기 작성, 다른 사람 후기) */
+.title-line {
+  position: relative;
+  width: 1000px;
+  height: 40px;
+  border-bottom: 1px solid #000000;
+  margin: 27px auto 0;
+}
+
+.title-line p {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 0;
+
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+/* 후기 작성 페이지 박스 */
+
+.book-photo {
+  width: 120px;
+  height: 174px;
+}
+
+.review-group {
+  position: relative;
+  width: 800px;
+  height: 646px;
+  border: 1px dotted red;
+
+  margin: 42px auto 0;
+}
+
+.review-group .book-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.review-book-title {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 400px;
+  height: 40px;
+
+  font-size: 24px;
+  color: #444444;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-write-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 40px;
+
+  font-size: 18px;
+  color: #444444;
+  text-align: right;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-author {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+  width: 500px;
+  height: 40px;
+
+  font-size: 18px;
+  color: #444444;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-star {
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  width: 240px;
+  height: 40px;
+
+  font-size: 18px;
+  color: #444444;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-onepharse {
+  position: absolute;
+  top: 134px;
+  left: 200px;
+  width: 600px;
+  height: 40px;
+
+  font-size: 18px;
+  color: #444444;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-hashtag {
+  position: absolute;
+  top: 188px;
+  left: 200px;
+  width: 600px;
+  height: 40px;
+
+  font-size: 18px;
+  color: #444444;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-like-group img {
+  position: absolute;
+  top: 194px;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+}
+
+.review-like-group p {
+  position: absolute;
+  top: 190px;
+  left: 40px;
+
+  width: 80px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: left;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.review-memo {
+  position: absolute;
+  top: 246px;
+  width: 800px;
+  height: 400px;
+  resize: none;
+}
+
+/* 도서 리스트 */
+.list-wrapper {
+  display: grid;
+  width: 1000px;
+  height: 1152px;
+  margin: 96px auto 0;
+
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 174px;
+  grid-row-gap: 30px;
+}
+
+/* 검색 항목 리스트 */
+.search-group {
+  position: relative;
+  width: 1000px;
+  height: 356px;
+  margin: 96px auto 0;
+  border: 0px dotted red;
+}
+
+.search-bar {
+  position: relative;
+  width: 1000px;
+  height: 54px;
+  border-bottom: 1px solid #000000;
+  margin: 0 auto 14px;
+}
+
+.search-title {
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  background-color: #c4c4c4;
+  top: 0;
+  left: 0;
+
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.search-group .black-btn {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  background-color: #000000;
+  bottom: 0;
+  left: 350px;
+
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* 하단 버튼 위치*/
+
+.btn-group {
+  position: relative;
+  width: 700px;
+  height: 40px;
+  margin: 40px auto;
+  border: 1px dotted red;
+}
+
+.btn-group .black-btn {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 0;
+
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.btn-group .grey-btn {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  right: 0;
+
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #c4c4c4;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.register-group {
+  position: relative;
+  width: 600px;
+  height: 280px;
+  margin: 73px auto;
+  border: 1px dotted red;
+}
+
+.register-bar {
+  position: relative;
+  width: 600px;
+  height: 40px;
+  border-bottom: 1px solid #000000;
+  margin: 0 auto 20px;
+}
+
+.register-input {
+  width: 300px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000000;
+}
+
+.register-flex-bar {
+  display: flex;
+  width: 600px;
+  height: 40px;
+  border-bottom: 1px solid #000000;
+  margin: 0 auto 10px;
+}
+
+.register-item {
+  font-size: 16px;
+  border: none;
+}
+
+.register-item:nth-child(1) {
+  flex: 2;
+}
+
+.register-item:nth-child(2) {
+  flex: 1;
+}
+
+.register-item:nth-child(3) {
+  flex: 1;
+}
+
+.register-birth {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000000;
+}
+
+.double-check-btn {
+  position: absolute;
+  right: 0;
+
+  width: 140px;
+  height: 40px;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* 피드 콘텐츠 */
+
+.feed-group {
+  position: relative;
+  width: 1000px;
+  height: 260px;
+  margin: 60px auto;
+  border: 1px dotted red;
+  border-bottom: 1px solid #000000;
+}
+
+.content-feed-group .follow-check {
+  position: absolute;
+  top: 116px;
+  left: 32px;
+
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+.follow-check-img {
+  display: block;
+  width: 36px;
+  margin: 0 auto;
+}
+
+.like-wrap {
+  position: absolute;
+  bottom: 60px;
+  left: 18px;
+
+  width: 100px;
+  height: 32px;
+}
+
+.like-feed-icn {
+  display: block;
+
+  width: 32px;
+  margin: 0 auto;
+}
+
+.like-feed-count {
+  font-size: 20px;
+  line-height: 32px;
+  padding-left: 40px;
+}
+
+.content-feed-group .book-photo {
+  position: absolute;
+  top: 26px;
+  left: 150px;
+}
+
+.content-feed-group .star-rating {
+  position: absolute;
+  top: 26px;
+  left: 320px;
+  height: 32px;
+}
+
+.content-feed-group .one-pharse {
+  position: absolute;
+  top: 85px;
+  left: 320px;
+  width: 680px;
+  height: 40px;
+  border: 1px dotted red;
+
+  font-size: 18px;
+  color: #444444;
+  line-height: 40px;
+}
+
+.content-feed-group .one-pharse p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.content-feed-group .hash-tag {
+  position: absolute;
+  bottom: 60px;
+  left: 320px;
+  width: 680px;
+  height: 40px;
+  border: 1px dotted red;
+
+  font-size: 18px;
+  color: #444444;
+  line-height: 40px;
+}
+
+.content-feed-group .hash-tag p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.feed-date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 20px;
+  border: 1px dotted red;
+
+  font-size: 20px;
+  color: #444444;
+  line-height: 20px;
+  text-align: center;
+}
+
+.feed-date p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
