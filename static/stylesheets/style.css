@@ -769,3 +769,84 @@
   line-height: 40px;
   text-align: center;
 }
+
+/* 페이지네이션 */
+
+.pagination {
+  margin: 78px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.pagination-list {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.pagination-list li {
+  display: inline;
+  text-align: center;
+}
+
+/* 페이지네이션(숫자들에 대한 스타일 지정) */
+
+.pagination-list a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #96a0ad;
+  line-height: 1.5;
+}
+
+.pagination-list .first {
+  margin-right: 15px;
+}
+
+.pagination-list .last {
+  margin-left: 15px;
+}
+
+.pagination-list .first:hover,
+.pagination-list .last:hover,
+.pagination-list .left:hover,
+.pagination-list .right:hover {
+  color: #2e9cdf;
+}
+
+.pagination-list a.active {
+  cursor: default;
+  color: #ffffff;
+}
+
+.pagination-list a:active {
+  outline: none;
+}
+
+.pagination-modal .num {
+  margin-left: 3px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+}
+
+.pagination-modal .num.active,
+.pagination-modal .num:active {
+  background-color: #2e9cdf;
+  cursor: pointer;
+}
+
+.arrow .left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid blue;
+}
