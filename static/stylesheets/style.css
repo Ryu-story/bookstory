@@ -241,20 +241,13 @@
   margin-block-end: auto;
 }
 
-.title-line {
-  width: 1000px;
-  height: 60px;
-  border-bottom: 1px solid #000000;
-  margin: 67px auto 0;
-}
-
 /* 타이틀 라인(후기 작성, 다른 사람 후기) */
 .title-line {
   position: relative;
   width: 1000px;
   height: 40px;
   border-bottom: 1px solid #000000;
-  margin: 27px auto 0;
+  margin: 72px auto 0;
 }
 
 .title-line p {
@@ -768,8 +761,75 @@
   color: #5b5b5b;
   line-height: 40px;
   text-align: center;
+  margin: 10px auto 0;
+}
+/* 검색 결과 리스트 */
+.search-result-container {
+  display: grid;
+  position: relative;
+  width: 1000px;
+  height: 1360px;
+  margin: 96px auto 0;
+
+  grid-template-rows: repeat(3, 384px);
+  grid-template-columns: repeat(4, 180px);
+  align-content: space-between;
+  justify-content: space-between;
 }
 
+.search-result-container .book-photo {
+  display: block;
+  width: 120px;
+  height: 174px;
+  margin: 0 auto;
+}
+
+.search-result-container .book-title {
+  width: 180px;
+  height: 40px;
+  margin: 20px auto 0;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #5b5b5b;
+  line-height: 40px;
+  text-align: center;
+}
+
+.search-result-container .book-author {
+  width: 180px;
+  height: 40px;
+
+  font-size: 14px;
+  color: #5b5b5b;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.search-result-container .to-review-btn {
+  width: 120px;
+  height: 20px;
+  background: #c4c4c4;
+  margin: 15px auto 0;
+
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  line-height: 20px;
+}
+
+.search-result-container .to-detail-btn {
+  width: 120px;
+  height: 20px;
+  background: #c4c4c4;
+  margin: 20px auto 0;
+
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  line-height: 20px;
+}
 /* 페이지네이션 */
 
 .pagination {
