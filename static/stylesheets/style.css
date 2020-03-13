@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+  font-family: RIDIBatang;
 }
 
 /* 메인헤더 (당신의 서재) 스타일 */
@@ -68,7 +77,7 @@
   width: 300px;
   height: 259px;
   margin: 150px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
 }
 
 .white-input-box {
@@ -108,6 +117,8 @@
   position: absolute;
   bottom: 0;
   background-color: #6b6b6b;
+  width: 300px;
+  height: 40px;
 }
 /* 내 프로필 사진 */
 .profileGroup {
@@ -274,7 +285,7 @@
   position: relative;
   width: 800px;
   height: 646px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   margin: 42px auto 0;
 }
@@ -460,7 +471,7 @@
   width: 700px;
   height: 40px;
   margin: 40px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
 }
 
 .btn-group .black-btn {
@@ -498,7 +509,7 @@
   width: 600px;
   height: 280px;
   margin: 73px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
 }
 
 .register-bar {
@@ -577,7 +588,7 @@
   width: 1000px;
   height: 260px;
   margin: 60px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
   border-bottom: 1px solid #000000;
 }
 
@@ -638,7 +649,7 @@
   left: 320px;
   width: 680px;
   height: 40px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   font-size: 18px;
   color: #444444;
@@ -656,7 +667,7 @@
   left: 320px;
   width: 680px;
   height: 40px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   font-size: 18px;
   color: #444444;
@@ -674,7 +685,7 @@
   right: 0;
   width: 180px;
   height: 20px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   font-size: 20px;
   color: #444444;
