@@ -815,8 +815,10 @@
 .pagination-list .first:hover,
 .pagination-list .last:hover,
 .pagination-list .left:hover,
-.pagination-list .right:hover {
-  color: #2e9cdf;
+.pagination-list .right:hover,
+.pagination-list .num:hover {
+  font-weight: bold;
+  color: #000000;
 }
 
 .pagination-list a.active {
@@ -839,7 +841,7 @@
 
 .pagination-modal .num.active,
 .pagination-modal .num:active {
-  background-color: #2e9cdf;
+  background-color: #5b5b5b;
   cursor: pointer;
 }
 
