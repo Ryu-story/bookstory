@@ -11,8 +11,8 @@ flask_bookstory1 = Blueprint('flask_bookstory1',__name__,template_folder='templa
 
 @app.route('/',methods=['GET','POST'])
 def login():
-    if 'username' in session:
-        return "Login Already Done!!!!"
+    if 'email' in session:
+        return redirect(url_for('main_feed'))
     form = LoginForm(request.form)
     if request.method == "POST":
         if form.validate():
@@ -25,7 +25,7 @@ def login():
 
                     if login_user(user, remember=True):
                         session['email'] = user.email
-                        return jsonify({"result":"success"})
+                        return redirect(url_for('main_feed'))
                     else:
                         flash("unable to log in")
                 elif flask_bcrypt.check_password_hash(user.password,
@@ -39,6 +39,9 @@ def login():
                 return redirect(url_for('login'))
     return render_template('index.html', form=form)
 
+@app.route('/main',methods=['GET','POST'])
+def main_feed():
+    return render_template('mainfeed.html')
 
 @app.route('/register',methods=['GET','POST'])
 def register():
@@ -76,7 +79,7 @@ def unauthorized():
     flash('로그인을 해주세요.')
     return redirect(url_for('login'))
 
-# @app.before_request
-# def make_session_permanent():
-#     session.permanent = True
-#     app.permanent_session_lifetime = timedelta(minutes=120)
+@app.before_request
+def make_session_permanent():
+    session.permanent = True
+    app.permanent_session_lifetime = timedelta(minutes=120)
