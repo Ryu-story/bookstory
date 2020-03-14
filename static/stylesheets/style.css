@@ -11,6 +11,8 @@
   font-family: RIDIBatang;
 }
 
+
+
 /* 메인헤더 (당신의 서재) 스타일 */
 .mainHeaderGroup {
   width: 1274px;
@@ -567,7 +569,6 @@
   border-right: none;
   border-bottom: 1px solid #000000;
 }
-
 .double-check-btn {
   position: absolute;
   right: 0;
