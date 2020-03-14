@@ -923,3 +923,82 @@
   border-bottom: 10px solid transparent;
   border-right: 10px solid blue;
 }
+/* 프로필 수정 */
+.profile-edit-group {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  order: 0px dotted red;
+}
+.profile-edit-group .profile-photo {
+  display: block;
+  width: 100px;
+  margin: 80px auto;
+}
+
+.profile-edit-group .register-bar {
+  position: relative;
+  width: 600px;
+  height: 40px;
+  border-bottom: 1px solid #000000;
+  margin: 0 auto 20px;
+}
+
+.profile-edit-group .double-check-btn {
+  position: absolute;
+  right: 0;
+
+  width: 140px;
+  height: 40px;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.profile-edit-group .register-input {
+  width: 300px;
+  height: 40px;
+
+  font-size: 16px;
+  line-height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000000;
+}
+
+.profile-edit-btn-group {
+  position: relative;
+  width: 600px;
+  height: 40px;
+  border: 0px dotted red;
+  margin: 60px auto;
+}
+
+.profile-edit-btn-group button {
+  width: 250px;
+  height: 40px;
+
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.profile-edit-btn-group .edit-btn {
+  background: #000000;
+  color: #ffffff;
+
+  position: absolute;
+  left: 0;
+}
+
+.profile-edit-btn-group .cancel-btn {
+  background: #c4c4c4;
+  color: #000000;
+
+  position: absolute;
+  right: 0;
+}

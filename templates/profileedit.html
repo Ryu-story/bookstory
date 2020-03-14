@@ -33,17 +33,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      $(function() {
-        $("#datepicker").datepicker({
-          showButtonPanel: true,
-          currentText: "오늘 날짜",
-          closeText: "닫기",
-          dateFormat: "yy-mm-dd",
-          maxDate: "D",
-          changeMonth: true,
-          changeYear: true
-        });
-      });
+
     </script>
 
     <!-- 구글폰트 -->
@@ -56,66 +46,53 @@
   <body>
     <div class="mainHeaderGroup">
       <div class="large-grey-box">
-        <p class="largeWhiteText">회원가입</p>
+        <p class="largeWhiteText">회원 정보 수정</p>
       </div>
     </div>
-    <div class="register-group">
-      <div class="register-bar">
-        <input
-          type="email"
-          class="register-input"
-          name="email"
-          placeholder="이메일 주소"
-          aria-label="email"
-        />
-        <button class="double-check-btn">중복확인</button>
-      </div>
-      <div class="register-bar">
-        <input
-          type="password"
-          class="register-input"
-          name="password"
-          placeholder="비밀번호"
-          aria-label="password"
-        />
-      </div>
-      <div class="register-bar">
-        <input
-          type="password"
-          class="register-input"
-          name="password"
-          placeholder="비밀번호 확인"
-          aria-label="password"
-        />
-      </div>
+    <div class="profile-edit-group">
+      <img class="profile-photo" src="../static/images/big-profile.png" alt="프로필 사진 수정" />
       <div class="register-bar">
         <input
           type="text"
           class="register-input"
           name="nickname"
-          placeholder="닉네임(별명)"
+          placeholder="아이디(별명)"
           aria-label="nickname"
         />
         <button class="double-check-btn">중복확인</button>
       </div>
-      <div class="register-flex-bar">
-        <div class="register-item">
-          <input type="text" id="datepicker" class="register-birth" placeholder="생년월일(8자리 입력)" />
-        </div>
-        <div class="register-item">
-          <div class="register-male">
-            <input type="radio" name="gender" id="male" checked />
-            <label for="male">남성</label>
-          </div>
-        </div>
-          <div class="register-item">
-            <input type="radio" name="gender" id="female" />
-            <label for="female">여성</label>
-          </div>
-        </div>
+      <div class="register-bar">
+        <input
+          type="password"
+          class="register-input"
+          name="password"
+          placeholder="현재 비밀번호"
+          aria-label="password"
+        />
+        <button class="double-check-btn">확인</button>
       </div>
-      <div class="register-btn">
-        <button class="lagre-black-btn">회원가입</button>
+      <div class="register-bar">
+        <input
+          type="password"
+          class="register-input"
+          name="password"
+          placeholder="새 비밀번호"
+          aria-label="password"
+        />
+      </div>
+      <div class="register-bar">
+        <input
+          type="password"
+          class="register-input"
+          name="password"
+          placeholder="새 비밀번호 확인"
+          aria-label="password"
+        />
+      </div>
+      </div>
+      <div class="profile-edit-btn-group">
+        <button class="edit-btn ">저장하기</button>
+        <button class="cancel-btn">취소</button>
       </div>
     </div>
   </body>
