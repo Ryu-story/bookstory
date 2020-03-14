@@ -16,11 +16,13 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     /> -->
+    
+
     <link href="../static/stylesheets/style.css" rel="stylesheet" />
 
     <!-- JS -->
     <!-- <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
@@ -50,6 +52,21 @@
     </style>
   </head>
   <body>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flashes">
+        {% for message in messages %}
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <span>{{ message }}</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            </button>
+          </div>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    {% endwith %}
+      {% block body %}
+      {% endblock %}
     <div class="mainHeaderGroup">
       <div class="large-black-box">
         <p class="largeWhiteText">당신의 서재</p>
@@ -59,22 +76,26 @@
       감명깊은 책의 구절을 저장하고, 자신만의 서재를 만들어 가세요.<br />
       다른 사람들의 서재를 구경하고 자신에게 맞는 책을 추천 받을 수 있습니다.
     </p>
-    <div class="input-box-group">
-      <input
-        type="text"
-        aria-label="email"
-        placeholder="E-mail"
-        class="white-input-box email-input"
-      />
-      <input
-        type="text"
-        aria-label="password"
-        placeholder="Password"
-        class="white-input-box pw-input"
-      />
+    <form method="POST" action="">
+      <div class="input-box-group">
+        <!-- <input
+          type="text"
+          aria-label="email"
+          placeholder="E-mail"
+          class="white-input-box email-input"
+        /> -->
+        {{ form.email(size=32, required=true,placeholder="이메일 주소",class='white-input-box email-input form-control')}}
+        <!-- <input
+          type="text"
+          aria-label="password"
+          placeholder="Password"
+          class="white-input-box pw-input"
+        /> -->
+        {{ form.password(size=32, required=true,placeholder='비밀번호',class="white-input-box email-input form-control")}}
 
-      <button class="black-btn login-btn">로그인</button>
-      <button class="black-btn register-btn">회원가입</button>
-    </div>
+        <button class="black-btn login-btn" value="login">로그인</button>
+        <button class="black-btn register-btn" onclick="location.href='/register'">회원가입</button>
+      </div>
+    </form>
   </body>
 </html>
