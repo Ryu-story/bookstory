@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+  font-family: RIDIBatang;
 }
 
 
@@ -70,7 +79,7 @@
   width: 300px;
   height: 259px;
   margin: 150px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
 }
 
 .white-input-box {
@@ -110,6 +119,8 @@
   position: absolute;
   bottom: 0;
   background-color: #6b6b6b;
+  width: 300px;
+  height: 40px;
 }
 /* 내 프로필 사진 */
 .profileGroup {
@@ -243,20 +254,13 @@
   margin-block-end: auto;
 }
 
-.title-line {
-  width: 1000px;
-  height: 60px;
-  border-bottom: 1px solid #000000;
-  margin: 67px auto 0;
-}
-
 /* 타이틀 라인(후기 작성, 다른 사람 후기) */
 .title-line {
   position: relative;
   width: 1000px;
   height: 40px;
   border-bottom: 1px solid #000000;
-  margin: 27px auto 0;
+  margin: 72px auto 0;
 }
 
 .title-line p {
@@ -283,7 +287,7 @@
   position: relative;
   width: 800px;
   height: 646px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   margin: 42px auto 0;
 }
@@ -469,7 +473,7 @@
   width: 700px;
   height: 40px;
   margin: 40px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
 }
 
 .btn-group .black-btn {
@@ -507,7 +511,7 @@
   width: 600px;
   height: 280px;
   margin: 73px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
 }
 
 .register-bar {
@@ -585,7 +589,7 @@
   width: 1000px;
   height: 260px;
   margin: 60px auto;
-  border: 1px dotted red;
+  border: 0px dotted red;
   border-bottom: 1px solid #000000;
 }
 
@@ -646,7 +650,7 @@
   left: 320px;
   width: 680px;
   height: 40px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   font-size: 18px;
   color: #444444;
@@ -664,7 +668,7 @@
   left: 320px;
   width: 680px;
   height: 40px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   font-size: 18px;
   color: #444444;
@@ -682,7 +686,7 @@
   right: 0;
   width: 180px;
   height: 20px;
-  border: 1px dotted red;
+  border: 0px dotted red;
 
   font-size: 20px;
   color: #444444;
@@ -693,4 +697,230 @@
 .feed-date p {
   margin-block-start: 0;
   margin-block-end: 0;
+}
+
+/* 책장 스타일 */
+.book-shelf {
+  position: relative;
+  width: 1000px;
+  height: 1152px;
+  margin: 96px auto 0;
+}
+
+.book-shelf-bar:nth-child(1) {
+  position: absolute;
+  top: 174px;
+  left: 0px;
+  width: 1000px;
+  height: 30px;
+  background: #444444;
+}
+
+.book-shelf-bar:nth-child(2) {
+  position: absolute;
+  top: 594px;
+  left: 0px;
+  width: 1000px;
+  height: 30px;
+  background: #444444;
+}
+
+.book-shelf-bar:nth-child(3) {
+  position: absolute;
+  top: 1014px;
+  left: 0px;
+  width: 1000px;
+  height: 30px;
+  background: #444444;
+}
+
+.book-container {
+  display: grid;
+  width: 1000px;
+  height: 1152px;
+  margin: 96px auto 0;
+
+  grid-template-rows: repeat(3, 312px);
+  grid-template-columns: repeat(4, 180px);
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.book-container .book-photo {
+  display: block;
+  width: 120px;
+  height: 174px;
+  margin: 0 auto 30px;
+}
+
+.book-container .book-title {
+  width: 180px;
+  height: 40px;
+  margin: 40px auto 0;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #5b5b5b;
+  line-height: 40px;
+  text-align: center;
+}
+
+.book-container .book-author {
+  width: 180px;
+  height: 40px;
+
+  font-size: 14px;
+  color: #5b5b5b;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px auto 0;
+}
+/* 검색 결과 리스트 */
+.search-result-container {
+  display: grid;
+  position: relative;
+  width: 1000px;
+  height: 1360px;
+  margin: 96px auto 0;
+
+  grid-template-rows: repeat(3, 384px);
+  grid-template-columns: repeat(4, 180px);
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.search-result-container .book-photo {
+  display: block;
+  width: 120px;
+  height: 174px;
+  margin: 0 auto;
+}
+
+.search-result-container .book-title {
+  width: 180px;
+  height: 40px;
+  margin: 20px auto 0;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #5b5b5b;
+  line-height: 40px;
+  text-align: center;
+}
+
+.search-result-container .book-author {
+  width: 180px;
+  height: 40px;
+
+  font-size: 14px;
+  color: #5b5b5b;
+  line-height: 40px;
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.search-result-container .to-review-btn {
+  width: 120px;
+  height: 20px;
+  background: #c4c4c4;
+  margin: 15px auto 0;
+
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  line-height: 20px;
+}
+
+.search-result-container .to-detail-btn {
+  width: 120px;
+  height: 20px;
+  background: #c4c4c4;
+  margin: 20px auto 0;
+
+  font-size: 14px;
+  color: #000000;
+  text-align: center;
+  line-height: 20px;
+}
+/* 페이지네이션 */
+
+.pagination {
+  margin: 78px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.pagination-list {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 20px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.pagination-list li {
+  display: inline;
+  text-align: center;
+}
+
+/* 페이지네이션(숫자들에 대한 스타일 지정) */
+
+.pagination-list a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #96a0ad;
+  line-height: 1.5;
+}
+
+.pagination-list .first {
+  margin-right: 15px;
+}
+
+.pagination-list .last {
+  margin-left: 15px;
+}
+
+.pagination-list .first:hover,
+.pagination-list .last:hover,
+.pagination-list .left:hover,
+.pagination-list .right:hover,
+.pagination-list .num:hover {
+  font-weight: bold;
+  color: #000000;
+}
+
+.pagination-list a.active {
+  cursor: default;
+  color: #ffffff;
+}
+
+.pagination-list a:active {
+  outline: none;
+}
+
+.pagination-modal .num {
+  margin-left: 3px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 100%;
+}
+
+.pagination-modal .num.active,
+.pagination-modal .num:active {
+  background-color: #5b5b5b;
+  cursor: pointer;
+}
+
+.arrow .left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid blue;
 }
